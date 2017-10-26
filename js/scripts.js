@@ -9,44 +9,46 @@ var hundreds = ["C", "CD", "D", "CM"]
 var thousands = ["M"]
 var numberArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
+//Output function of below. Write these to loop through more complicated if/else statements
+var single = function(userInput){
+  if (single <= 3)
+  return console.log(test.repeat(userInput[0]);
+}
+var double = function(userInput){
+
+}
+var triple = function(userInput){
+
+}
+var quad = function(userInput){
+
+}
+
+// function and if/else to determine whether input number was single, double, triple or quadruple digits.
+var length = function(userInput){
+  if (userInput.length === 1) {
+    single(userInput);
+
+} else if (userInput.length === 2) {
+    double(userInput);
+
+} else if (userInput.length === 3) {
+    triple(userInput);
+
+} else (userInput.length === 4)
+    quad(userInput);
+}
+
 // User Interface or Frontend Logic Here
 $(document).ready(function() {
   $("#form").submit(function(event) {
   event.preventDefault();
     var userInput = $("input#digits").val();
 
-
-    var single = "";
-    var double = "";
-    var triple = "";
-    var quad = "";
     // var double = $("#doubleInput").val();
     // var triple = $("#tripleInput").val();
     // var quad = $("#quadInput").val();
+    $("#result").append(length(userInput));
 
-    if (userInput.length === 1) {
-        for (index = 0; index <= numberArray.length; index++) {
-          if (numberArray[i] === userInput) {
-
-          }
-          return numberArray
-          // alert(numberArray);
-        }
-      // alert("single");
-    } else if (userInput.length === 2) {
-      userInput = double
-      // alert("double");
-    } else if (userInput.length === 3) {
-      userInput = triple
-      // alert("triple");
-    } else {
-      (userInput.length === 4)
-      userInput = quad
-      // alert("quad");
-    }
-
-
-
-  // $("#result").append("<p>" + romanResult + "</p>");
-});
-});
+  })
+})
