@@ -11,12 +11,17 @@
   <body>
     <div class="container">
       <h1>Convert Numbers into Roman Numerals</h1>
-      <input class="form-control" type="text" id="digits" placeholder="Enter a number...">
-      <button type="submit" class="btn">Convert</button>
+      <form id="#form">
+        <div class="form-group">
+          <label for="someInput">Enter a number here:</label>
+          <input class="form-control" type="numbers" id="digits">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </form>
       <div id="result">
         <p>This is your answer: <span class="romanResult"></span></p>
       </div>
-    </div>
 
+    </div>
   </body>
 </html>
