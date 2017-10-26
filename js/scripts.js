@@ -6,14 +6,15 @@ var numbers = ["1", "4", "5", "9", "10", "40", "50", "90", "100", "400", "500", 
 // User Interface or Frontend Logic Here
 $(document).ready(function() {
   $("#form").submit(function(event) {
-    // var userInput = $("input#digits").val();
-    console.log()
+  event.preventDefault();
+    var userInput = $("input#digits").val();
 
-    // var single = $("#singleInput").val();
-    // var double = $("#doubleInput").val();
-    // var triple = $("#tripleInput").val();
-    // var quad = $("#quadInput").val();
-    debugger;
+
+    var single = $("#singleInput").val();
+    var double = $("#doubleInput").val();
+    var triple = $("#tripleInput").val();
+    var quad = $("#quadInput").val();
+
     if (userInput.length === 1) {
       userInput = single
       alert("single");
@@ -24,7 +25,7 @@ $(document).ready(function() {
       userInput = triple
       alert("triple");
     } else {
-      // (userInput.length === 4)
+      (userInput.length === 4)
       userInput = quad
       alert("quad");
     }
@@ -34,7 +35,7 @@ $(document).ready(function() {
     //   }
     // }
 
-  event.preventDefault();
+
 
   $("#result").append("<p>" + romanResult + "</p>");
 });
